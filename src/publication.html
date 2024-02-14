@@ -30,9 +30,17 @@
       <p>
         Jag skapar sedan mina sidor: index.html, publication.html och
         pictures.html. Jag skapar en CSS fil och js-fil och kopplar dessa till
-        varje html-sida. Jag commitar med jämna mellanrum till min
-        develop-branch och när jag känner att en del av sidan är helt färdig
-        mergar jag develop och main.
+        varje html-sida. När jag har kommit en bit på sidan, exempelvis löst en
+        del av ett problem, så comittar jag förändringarna till github. När jag
+        är klar med problemet och sidan ser bra ut så köt jag npm run build och
+        så mergar jag develop-branchen med main-branch så att alla förändringar
+        kommer till main och så att även den publicerade webbsidan uppdateras.
+      </p>
+      <p>
+        På undersidan pictures lägger jag sedan in 5 bilder. Dessa bilder lägger
+        jag i picture-taggen och använder parcel för att optimera dessa (se
+        rubrik automatisering). Jag skapar sedan vilket bakåtkompabilitet
+        webbläsaren ska stödja med hjälp av parcel (se rubrik Automatisering).
       </p>
       <section>
         <h2>Struktur</h2>
@@ -46,25 +54,61 @@
       </section>
       <section>
         <h2>Automatisering</h2>
-      </section>
-      <section>
-        <h2>Git</h2>
-        <p>
-          Sidan är kopplad till git och har ett github-repo. I repot finns två
-          olika branches, en som heter main och en som heter develop. Under
-          utvecklingsfasen av en ny del eller funktion på webbsidan så commitas
-          alla förändringar till develp branchen. Detta för att inte publicera
-          flera ofärdiga lösnignar till webbplatsen. När funktionen eller delen
-          på sidan är klar och fungerar som den ska så mergas develop med main.
-        </p>
-      </section>
-      <section>
-        <h2>Publicering</h2>
-        <p>
-          Hemsidan publiceras automatiskt via Netlify. Hemsidan är kopplad till
-          mitt repository på github och när "npm run build" körs så uppdateras
-          automatiskt hemsidan utifrån dist-katalogen.
-        </p>
+        <section class="automatisera">
+          <h2>
+            Minifiering av CSS och HTML samt minifiering och transpilering av
+            JavaScript
+          </h2>
+          <p>
+            När man kör parcel build så optimeras HTML, CSS och JavaScript
+            automatiskt. Parcel använder SWC för att minifiera JavaScript,
+            lightningcss för CSS ocg htmlnano för HTML. Om man inte vill att
+            filerna ska optimeras och minifieras kan man använda sig av
+            CLI-flaggan --no-optimize.
+          </p>
+        </section>
+        <section class="automatisera">
+          <h2>Bilder</h2>
+          <p>
+            Alla bilder på undersidan pictures komprimeras automatiskt till en
+            annan storlek och även till annat filformat. I första hand avif, i
+            andrahand webp och i sista hand en jpeg som originalbilden men med
+            annan storlek. Bilderna ligger i en picturetag och varje ny variant
+            jag vill ha av originalbilden i en egen source-tag. När det kommer
+            till bilderna så har parcel gjort ett bra jobb på egen hand så jag
+            har därför inte behövt skapa någon sharp.config.json-fil.
+          </p>
+        </section>
+        <section class="automatisera">
+          <h2>Bakåtkompabilitet</h2>
+          <p>
+            I package.json finns queries för vilka webbläsarversioner som ska
+            stödjas. 99.5% av de mest använda webbläsarna, de senaste två
+            versionerna av varje webbläsare och under förutsättning att de inte
+            är "döda". En död webbläsare är en webbläsare som inte har haft
+            officiellt stöd eller uppdatering på 24 månader (IE11, Blackberry
+            10, Blackberry 7, Samsung 4, OperaMobile 12.1, IE_Mob 11 och alla
+            versioner av Baidu. (Källa:
+            <a
+              id="blue-link"
+              href="https://github.com/browserslist/browserslist#full-list"
+              >Github browserlist</a
+            >))
+          </p>
+        </section>
+        <section class="automatisera">
+          <h2>Kopiering av arbetsfiler och publicering</h2>
+          <p>
+            När npm run build körs så kopieras alla arbetsfiler automatiskt och
+            optimeras av parcel. De optimerade filerna hamnar sedan i katalogen
+            dist.
+          </p>
+          <p>
+            När dist-katalogen uppdateras i main-branchen på github så
+            uppdateras även webbsidan automatiskt på netlify då webbsidan är
+            satt att distribueras från github.
+          </p>
+        </section>
       </section>
     </section>
     <footer>
