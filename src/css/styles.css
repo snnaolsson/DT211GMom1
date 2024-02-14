@@ -110,6 +110,7 @@ a.active-page {
 }
 /*PICTURES */
 #pictures {
+  padding-top: 5%;
   text-align: center;
 }
 
