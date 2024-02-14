@@ -123,6 +123,9 @@ a.active-page {
     width: 80%;
     margin: auto;
   }
+  #pictures {
+    padding: 1%;
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -199,5 +202,8 @@ a.active-page {
     background-color: #d9cfcf00;
     border-radius: 40%;
     box-shadow: none;
+  }
+  #pictures {
+    padding: 1%;
   }
 }
