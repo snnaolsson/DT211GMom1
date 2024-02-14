@@ -1,0 +1,23 @@
+{
+  "name": "dt211gmom1",
+  "version": "1.0.0",
+  "description": "Moment 1",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snnaolsson/DT211GMom1.git"
+  },
+  "author": "Sanna Olsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snnaolsson/DT211GMom1/issues"
+  },
+  "homepage": "https://github.com/snnaolsson/DT211GMom1#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
