@@ -36,6 +36,9 @@ header {
   padding: 2%;
   text-align: center;
 }
+#burger {
+  display: none;
+}
 nav {
   width: 100%;
 }
@@ -48,16 +51,20 @@ nav ul {
   justify-content: end;
 }
 a {
-  color: rgb(221, 199, 249);
+  color: rgb(228, 223, 223);
   text-decoration: none;
   display: inline-flex;
 }
 a:hover {
-  color: rgb(249, 199, 246);
+  background-color: rgb(228, 223, 223);
+  border-radius: 40%;
+  box-shadow: 1px 1px 10px 5px rgb(228, 223, 223),
+    1px 1px 20px 5px rgb(233, 233, 233), 1px 1px 20px 5px #fff;
+  color: black;
 }
 
 a:active {
-  color: rgb(221, 199, 249);
+  color: rgb(228, 223, 223);
 }
 footer {
   background-color: rgb(39, 39, 39);
@@ -65,6 +72,14 @@ footer {
   text-align: center;
   padding: 5% 0% 5% 0%;
 }
+.active-page {
+  background-color: rgb(228, 223, 223);
+  color: black;
+}
+a.active-page {
+  padding: 2% 15%;
+}
+
 /*INDEX*/
 #information {
   line-height: 3rem;
@@ -135,5 +150,54 @@ footer {
   }
   #h2ash1 {
     font-size: 2rem;
+  }
+  nav {
+    left: 0%;
+    display: none;
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    background-color: rgb(228, 223, 223);
+    box-shadow: 1px 1px 25px 5px rgb(39, 39, 39);
+  }
+  #burger {
+    display: block;
+    color: rgb(228, 223, 223);
+  }
+  .fa-bars {
+    font-size: 2rem;
+  }
+  nav ul {
+    display: block;
+    justify-content: start;
+  }
+  nav ul li {
+    display: block;
+    padding: 5%;
+  }
+  nav ul li:hover {
+    background-color: rgb(217, 207, 207);
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+    color: black;
+  }
+  nav ul li a:hover {
+    color: black;
+  }
+  a:hover {
+    border-radius: 0%;
+    box-shadow: none;
+  }
+  .active-page {
+    background-color: #d9cfcf00;
+  }
+  a.active-page {
+    padding: 2% 15%;
+  }
+  a:hover {
+    background-color: #d9cfcf00;
+    border-radius: 40%;
+    box-shadow: none;
   }
 }
