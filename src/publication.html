@@ -4,6 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Publicering</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/app.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header></header>
+    <section id="publication">
+      <h1>Arbetsprocessen</h1>
+      <p>Jag börjar med att installera parcel.</p>
+      <section>
+        <h2>Struktur</h2>
+        <p>
+          Hemsidan ligger i VS i en src-katalog. I den katalogen så finns
+          underkataloger för bilder, css och js. Detta för att ha en
+          lättöverskådlig struktur i arbetet. En gitignore-fil finns även i
+          rotkatalogen och i den finns de delar som inte ska sparas till git.
+        </p>
+      </section>
+      <section>
+        <h2>Automatisering</h2>
+      </section>
+      <section>
+        <h2>Git</h2>
+        <p>
+          Sidan är kopplad till git och har ett github-repo. I repot finns två
+          olika branches, en som heter main och en som heter develop. Under
+          utvecklingsfasen av en ny del eller funktion på webbsidan så commitas
+          alla förändringar till develp branchen. Detta för att inte publicera
+          flera ofärdiga lösnignar till webbplatsen. När funktionen eller delen
+          på sidan är klar och fungerar som den ska så mergas develop med main.
+        </p>
+      </section>
+      <section>
+        <h2>Publicering</h2>
+        <p>
+          Hemsidan publiceras automatiskt via Netlify. Hemsidan är kopplad till
+          mitt repository på github och när "npm run build" körs så uppdateras
+          automatiskt hemsidan utifrån dist-katalogen.
+        </p>
+      </section>
+    </section>
+  </body>
 </html>
