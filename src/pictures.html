@@ -4,6 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bilder</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/app.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startsida</a></li>
+          <li><a href="publication.html">Publicering</a></li>
+          <li><a href="pictures.html">Bilder</a></li>
+          <li><a href="#">Länk 1</a></li>
+          <li><a href="#">Länk 2</a></li>
+          <li><a href="#">Länk 3</a></li>
+        </ul>
+      </nav>
+      <div id="header-text">Frontend-baserad webbutveckling</div>
+    </header>
+    <section id="pictures">
+      <h1>Bilder</h1>
+      <div>
+        <picture>
+          <source
+            srcset="images/aurora.jpg?as=avif&width=800"
+            type="image/avif"
+          />
+          <source
+            srcset="images/aurora.jpg?as=webp&width=800"
+            type="image/webp"
+          />
+          <source srcset="images/aurora.jpg?width=800" />
+          <img src="images/aurora.jpg" alt="aurora" />
+        </picture>
+      </div>
+      <div class="pics">
+        <picture>
+          <source
+            srcset="images/mountain.jpg?as=avif&width=800"
+            type="image/avif"
+          />
+          <source
+            srcset="images/mountain.jpg?as=webp&width=800"
+            type="image/webp"
+          />
+          <source srcset="images/mountain.jpg?width=800" />
+          <img src="images/mountain.jpg" alt="mountain" />
+        </picture>
+      </div>
+      <div class="pics">
+        <picture>
+          <source
+            srcset="images/forest.jpg?as=avif&width=800"
+            type="image/avif"
+          />
+          <source
+            srcset="images/forest.jpg?as=webp&width=800"
+            type="image/webp"
+          />
+          <source srcset="images/forest.jpg?width=800" />
+          <img src="images/forest.jpg" alt="forest" />
+        </picture>
+      </div>
+      <div class="pics">
+        <picture>
+          <source
+            srcset="images/mountainlake.jpg?as=avif&width=800"
+            type="image/avif"
+          />
+          <source
+            srcset="images/mountainlake.jpg?as=webp&width=800"
+            type="image/webp"
+          />
+          <source srcset="images/mountainlake.jpg?width=800" />
+          <img src="images/mountainlake.jpg" alt="mountainlake" />
+        </picture>
+      </div>
+      <div class="pics">
+        <picture>
+          <source
+            srcset="images/nature.jpg?as=avif&width=800"
+            type="image/avif"
+          />
+          <source
+            srcset="images/nature.jpg?as=webp&width=800"
+            type="image/webp"
+          />
+          <source srcset="images/nature.jpg?width=800" />
+          <img src="images/nature.jpg" alt="nature" />
+        </picture>
+      </div>
+      <p class="cursive">Alla bilder kommer från Pixabay</p>
+    </section>
+    <footer>
+      <p>saol1901@student.miun.se</p>
+    </footer>
+  </body>
 </html>

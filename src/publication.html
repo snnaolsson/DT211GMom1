@@ -8,17 +8,40 @@
     <script type="module" src="js/app.js"></script>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startsida</a></li>
+          <li><a href="publication.html">Publicering</a></li>
+          <li><a href="pictures.html">Bilder</a></li>
+          <li><a href="#">Länk 1</a></li>
+          <li><a href="#">Länk 2</a></li>
+          <li><a href="#">Länk 3</a></li>
+        </ul>
+      </nav>
+      <div id="header-text">Frontend-baserad webbutveckling</div>
+    </header>
     <section id="publication">
       <h1>Arbetsprocessen</h1>
-      <p>Jag börjar med att installera parcel.</p>
+      <p>
+        Jag börjar med att installera parcel. Skapar ett repo till projektet.
+        Kopplar repot till netlify (se rubrik publicering).
+      </p>
+      <p>
+        Jag skapar sedan mina sidor: index.html, publication.html och
+        pictures.html. Jag skapar en CSS fil och js-fil och kopplar dessa till
+        varje html-sida. Jag commitar med jämna mellanrum till min
+        develop-branch och när jag känner att en del av sidan är helt färdig
+        mergar jag develop och main.
+      </p>
       <section>
         <h2>Struktur</h2>
         <p>
-          Hemsidan ligger i VS i en src-katalog. I den katalogen så finns
-          underkataloger för bilder, css och js. Detta för att ha en
-          lättöverskådlig struktur i arbetet. En gitignore-fil finns även i
-          rotkatalogen och i den finns de delar som inte ska sparas till git.
+          All HTML, CSS, JS och media som hör till webbsidan ligger i en
+          src-katalog. I den katalogen så finns underkataloger för bilder, css
+          och js. Detta för att ha en lättöverskådlig struktur i arbetet. En
+          gitignore-fil finns till projektet och i den finns de delar som inte
+          ska sparas till git.
         </p>
       </section>
       <section>
@@ -44,5 +67,8 @@
         </p>
       </section>
     </section>
+    <footer>
+      <p>saol1901@student.miun.se</p>
+    </footer>
   </body>
 </html>

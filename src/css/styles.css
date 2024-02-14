@@ -26,26 +26,38 @@ h1 {
 header {
   background-color: rgb(39, 39, 39);
   display: flex;
-  padding: 5% 2% 5% 2%;
+  flex-wrap: wrap;
+  padding: 2% 2% 2% 2%;
+}
+#header-text {
+  font-size: 3rem;
+  color: whitesmoke;
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+}
+nav {
+  width: 100%;
 }
 nav ul li {
-  display: inline;
-  justify-content: space-between;
+  display: inline-flex;
+  padding-left: 5%;
+}
+nav ul {
+  display: flex;
+  justify-content: end;
 }
 a {
   color: rgb(221, 199, 249);
   text-decoration: none;
-  justify-content: space-between;
+  display: inline-flex;
 }
 a:hover {
   color: rgb(249, 199, 246);
-  text-decoration: wavy;
 }
-a:visited {
-  color: rgb(221, 199, 249);
-}
+
 a:active {
-  color: antiquewhite;
+  color: rgb(221, 199, 249);
 }
 footer {
   background-color: rgb(39, 39, 39);
@@ -57,13 +69,26 @@ footer {
 #information {
   line-height: 3rem;
   padding: 5%;
+  width: 40%;
+  margin: auto;
 }
 #moodle-link {
   color: blue;
+}
+.cursive {
+  font-style: italic;
+  font-size: 1rem;
 }
 
 /*PUBLICATION*/
 #publication {
   line-height: 3rem;
+  padding: 5%;
+  width: 40%;
+  margin: auto;
+}
+/*PICTURES */
+#pictures {
+  text-align: center;
   padding: 5%;
 }
