@@ -90,8 +90,50 @@ footer {
 .automatisera h2 {
   font-size: 1.5rem;
 }
+#h2ash1 {
+  font-size: 2.5rem;
+}
 /*PICTURES */
 #pictures {
   text-align: center;
   padding: 5%;
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  #publication {
+    width: 80%;
+    margin: auto;
+  }
+  #information {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media all and (max-width: 767px) {
+  #publication {
+    width: 90%;
+    margin: auto;
+  }
+  #information {
+    width: 90%;
+    margin: auto;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  li {
+    font-size: 1.1rem;
+    list-style: outside;
+  }
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  #h2ash1 {
+    font-size: 2rem;
+  }
 }
