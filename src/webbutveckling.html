@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbutveckling ramschema</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4f7fd7ff6b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/ramschema.js"></script>
+  </head>
+</head>
+<body>
+    <header>
+        <div id="burger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="menu">
+          <ul>
+            <li><a href="index.html">Startsida</a></li>
+            <li>
+              <a href="publication.html">Publicering</a>
+            </li>
+            <li><a href="pictures.html">Bilder</a></li>
+            <li><a class="active-page" href="webbutveckling.html">Ramschema</a></li>
+            <li><a href="#">Länk 1</a></li>
+            <li><a href="#">Länk 2</a></li>
+            
+          </ul>
+        </nav>
+        <div id="header-text">Frontend-baserad webbutveckling</div>
+      </header>
+      <section id="webbutveckling">
+        <h1>Webbutveckling- Ramschema</h1>
+        <div class="searchbar">
+        <input type="text" id="searchbar" placeholder="Sök efter kurskod eller kursnamn">
+        </div>
+        <table>
+          <thead>
+            <tr id="colored">
+              <td id="kurskod">Kurskod</td>
+              <td id="kursnamn">Kursnamn</td>
+              <td id="progression">Progression</td>
+            </tr>
+          </thead>
+          <tbody id="schedule-list"></tbody>
+        </table>
+      </section>
+
+      <footer>
+        <p>saol1901@student.miun.se</p>
+      </footer>
+    
+</body>
+</html>
